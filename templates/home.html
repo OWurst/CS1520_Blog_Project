@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+   <title>Home Page</title>
+{% endblock %}
+   
+{% block body %}
+    <br>
+    <div id=“BlogList”>
+        {% if blogposts|length < 1 %}
+            <h3>There are no Blog posts. Click the "New Blog" button above to create one. </h3>
+        {% else %}
+            {% for post in blogposts %}
+                <a href="/blog/{{post.id}}" class = "homeBlogs">
+                    <h2 id = "title">{{post.title}}</h2>
+                    <p id = "author">{{ post.author }}</p>
+                </a>
+                <br>
+            {% endfor %}
+        {% endif %}
+    </div>
+{% endblock %}

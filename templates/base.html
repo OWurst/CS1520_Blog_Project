@@ -1,0 +1,19 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        {% block head %} {% endblock %}
+    </head>
+    <body>
+        <nav>  
+            <h1 id = "pageTitle">CS-1520 Blog Corner</h1>
+            <a href="/" class = "nav" id = "home">Home</a></li>
+            <form action="/new-blog" id = "new" class = "nav">
+                <button type="submit" class = "button">NewBlog</button>
+            </form>
+        </nav>
+        {% block body %} {% endblock %}
+    </body>
+</html>
