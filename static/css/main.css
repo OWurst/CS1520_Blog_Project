@@ -1,0 +1,98 @@
+body {
+   margin: 30px;
+   font-family: sams-serif;
+   text-align: center;
+}
+h2 {
+   color: red;
+}
+
+.homeBlogs{
+   text-align: left;
+}
+
+nav {
+   display: flex; 
+   text-align: left;
+}
+
+nav .nav {
+   margin: 30px;
+}
+
+nav #home {
+   color: darkslategray;
+   margin-left: 40px;
+}
+
+nav #new {
+   margin-top: 10px;
+   margin-left: 0px;
+}
+
+nav #pageTitle {
+   margin-top: 15px;
+   color: blue;
+   font-size: 36;
+   font-style: italic;
+   text-align: center;
+}
+
+.content {
+   text-align: left;
+   margin: 40px;
+}
+.content h1 {
+   color: red;
+   font-weight: bold;
+   font-style: italic;
+}
+.content h2 {
+   font-weight: bold;
+   color: black;
+}
+.content p{
+   color: black;
+   margin-top: 50px;
+}
+
+#title{
+   color: red;
+}
+#author{
+   color: black;
+   font-weight: bold;
+}
+
+a {
+   text-decoration: none;
+   padding: 0%;
+}
+
+form {
+   padding-top: 20px;
+   display: inline-block;
+}
+
+.button {
+   background-color: red;
+   transition-duration: 0.4s;
+   border-radius: 8px;
+   font-size: 16px;
+   color: white;
+   border: red;
+}
+    
+.button:hover {
+   border:red;
+   background-color: white;
+   color: black;
+}
+
+.blogpost {
+   text-align: left;
+   margin-left: 30px;
+}
+.blogpost #button {
+   margin-left: 50px;
+}
